@@ -1,6 +1,4 @@
-version: '3'
 services:
-
     teiton_app:
         build:
             context: ./.docker
