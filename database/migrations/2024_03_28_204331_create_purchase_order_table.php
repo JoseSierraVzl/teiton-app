@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('purchase_order', function (Blueprint $table) {
-            $table->id();
+            $table->id()->primary();
             $table->bigInteger('number_order');
             $table->timestamp('request_date');
             $table->timestamp('realization_date');
