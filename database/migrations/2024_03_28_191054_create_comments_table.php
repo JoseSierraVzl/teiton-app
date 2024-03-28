@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('comments', function (Blueprint $table) {
-            $table->id();
+            $table->id()->primary();
             $table->string('body', length: 500);
             $table->timestamp('creation_date');
             $table->timestamp('update_date');
